@@ -24,4 +24,18 @@ add.addEventListener("click", e => {
     todo.appendChild(time);
 
     section.appendChild(todo);
+
+    // create check and trash can icon
+    let completeBtn = document.createElement("button")
+    completeBtn.classList.add("complete")
+    completeBtn.innerHTML = '<i class="fa-solid fa-check"></i>'
+
+    let trashBtn = document.createElement("button")
+    trashBtn.classList.add("trash")
+    trashBtn.innerHTML = '<i class="fa-solid fa-trash-can"></i>'
+
+    todo.appendChild(completeBtn)
+    todo.appendChild(trashBtn)
+
+    section.appendChild(todo)
 })

@@ -25,7 +25,7 @@ header {
 }
 
 header h1 {
-  color: #edf6f9;
+  color: #f6fcfd;
   font-size: 3rem;
 }
 
@@ -39,12 +39,13 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 2rem;
 }
 
 form input, form button {
   border: none;
   padding: 0.25rem 0.75rem;
-  margin: 0.1rem;
+  margin: 0.2rem;
   font-size: 1.25rem;
 }
 
@@ -55,6 +56,84 @@ form input[type="number"] {
 form button {
   cursor: pointer;
   background: #016074;
-  color: #edf6f9;
+  color: #f6fcfd;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section div.todo {
+  width: 70vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.2rem;
+}
+
+section div.todo p {
+  background: #f6fcfd;
+  color: #222;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.5rem;
+}
+
+section div.todo p.todo-text {
+  width: 60%;
+}
+
+section div.todo p.todo-time {
+  width: 25%;
+  text-align: center;
+}
+
+section div.todo button {
+  padding: 0.25rem 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  color: #eee;
+}
+
+section div.todo button.complete {
+  background: #02bd6f;
+}
+
+section div.todo button.trash {
+  background: #b11500;
+}
+
+@-webkit-keyframes scaleUP {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUP {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -13,21 +13,52 @@ header
     justify-content: center
     align-items: center
     h1
-        color: #edf6f9
+        color: #f6fcfd
         font-size: 3rem
 
 form
     display: flex
     justify-content: center
     align-items: center
+    margin-bottom: 2rem
     input,button
         border: none
         padding: 0.25rem 0.75rem
-        margin: 0.1rem
+        margin: 0.2rem
         font-size: 1.25rem
     input[type="number"]
         text-align: center
     button
         cursor: pointer
         background: #016074
-        color: #edf6f9
+        color: #f6fcfd
+
+section
+    display: flex
+    flex-direction: column
+    align-items: center
+    div.todo
+        width: 70vw
+        display: flex
+        align-items: center
+        margin: 0.2rem
+        p
+            background: #f6fcfd
+            color: #222
+            padding: 0.25rem 0.5rem
+            font-size: 1.5rem
+        p.todo-text
+            width: 60%
+        p.todo-time
+            width: 25%
+            text-align: center
+        button
+            padding: 0.25rem 0.5rem
+            font-size: 1.5rem
+            border: none
+            cursor: pointer
+            color: #eee
+        button.complete
+            background: #02bd6f
+        button.trash
+            background: #b11500
