@@ -3,6 +3,11 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+i {
+  pointer-events: none;
 }
 
 body {
@@ -25,7 +30,7 @@ header {
 }
 
 header h1 {
-  color: #f6fcfd;
+  color: #eee;
   font-size: 3rem;
 }
 
@@ -56,7 +61,7 @@ form input[type="number"] {
 form button {
   cursor: pointer;
   background: #016074;
-  color: #f6fcfd;
+  color: #eee;
 }
 
 section {
@@ -81,6 +86,8 @@ section div.todo {
       -ms-flex-align: center;
           align-items: center;
   margin: 0.2rem;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 section div.todo p {
@@ -115,6 +122,12 @@ section div.todo button.trash {
   background: #b11500;
 }
 
+.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
+}
+
 @-webkit-keyframes scaleUP {
   0% {
     -webkit-transform: scale(0);
@@ -134,6 +147,28 @@ section div.todo button.trash {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleDown {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scaleDown {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,6 +2,11 @@
     margin: 0
     padding: 0
     box-sizing: border-box
+    font-family: 'Poppins', sans-serif
+
+i
+    pointer-events: none
+    // 使 i 圖形元素不成為 pointer event，可以直接點到 button
 
 body
     min-height: 100vh
@@ -13,7 +18,7 @@ header
     justify-content: center
     align-items: center
     h1
-        color: #f6fcfd
+        color: #eee
         font-size: 3rem
 
 form
@@ -31,7 +36,7 @@ form
     button
         cursor: pointer
         background: #016074
-        color: #f6fcfd
+        color: #eee
 
 section
     display: flex
@@ -42,6 +47,7 @@ section
         display: flex
         align-items: center
         margin: 0.2rem
+        transition: all 0.1s ease
         p
             background: #f6fcfd
             color: #222
@@ -62,3 +68,20 @@ section
             background: #02bd6f
         button.trash
             background: #b11500
+
+.done
+    opacity: 0.5
+    text-decoration: line-through
+    text-decoration-thickness: 0.2rem
+
+@keyframes scaleUP
+    0%
+        transform: scale(0)
+    100%
+        transform: scale(1)
+
+@keyframes scaleDown
+    0%
+        transform: scale(1)
+    100%
+        transform: scale(0)
