@@ -52,7 +52,7 @@ form input[type="number"] {
   text-align: center;
 }
 
-button {
+form button {
   cursor: pointer;
   background: #016074;
   color: #edf6f9;
