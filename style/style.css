@@ -125,7 +125,7 @@ section div.todo button.trash {
 .done {
   opacity: 0.5;
   text-decoration: line-through;
-  text-decoration-thickness: 0.2rem;
+  text-decoration-thickness: 0.2 rem;
 }
 
 @-webkit-keyframes scaleUP {

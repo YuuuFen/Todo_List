@@ -11,6 +11,11 @@ add.addEventListener("click", e => {
     let todoDate = form.children[2].value;
     // console.log(todoText, todoMonth, todoDate)
 
+    if(todoText === "") {
+        alert("Please enter Item.");
+        return;
+    }
+
     // create a todo
     let todo = document.createElement("div");
     todo.classList.add("todo");
@@ -48,14 +53,17 @@ add.addEventListener("click", e => {
             todoItem.remove();
         })
 
-        todoItem.style.animation = "scaleDown 0.3s forwards";
+        todoItem.style.animation = "scaleDown 0.2s forwards";
     })
 
     todo.appendChild(completeBtn)
     todo.appendChild(trashBtn)
 
         // show up animation
-    todo.style.animation = "scaleUP 0.3s forwards"
+    todo.style.animation = "scaleUP 0.2s forwards"
+
+        // clear the text input
+    form.children[0].value = ""
 
     section.appendChild(todo)
 })
